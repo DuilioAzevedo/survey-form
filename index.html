@@ -7,6 +7,54 @@
     <title>Formulário de Pesquisa</title>
 </head>
 <body>
-    
+    <h1 id="title">Pesquisa Rápida</h1>
+    <p id="description">Pesquisa de rápida sobre a satisfação do produto</p>
+    <form id="survey-form">
+        <label for="name" id="name-label">Nome:</label><br>
+        <input type="text" name="name" id="name" placeholder="Entre com seu nome" required><br>
+        <label for="email" id="email-label">E-mail</label><br>
+        <input type="email" name="email" id="email" placeholder="Entre com seu e-mail" required><br>
+        <label for="number" id="number-label">Idade</label><br>
+        <input type="number" name="number" id="number" min="0" max="100" placeholder="Entre com sua idade"><br>
+
+        <label for="dropdown">Selecione o nível de staisfação com o produto:</label><br>
+        <select name="dropdown" id="dropdown">
+            <option disabled selected value>Selecione o nível</option>
+            <option value="Muito Satisfeito">Muito Satisfeito</option>
+            <option value="Satisfeito">Satisfeito</option>
+            <option value="Insatisfeito">Insatisfeito</option>
+        </select><br>
+
+        <div>
+            <p>Voce recomendaria o produto para um amigo?</p>
+            <input type="radio" name="radio-btn" id="yes" value="yes" checked>
+            <label for="yes">Sim</label><br>
+            
+            <input type="radio" name="radio-btn" id="not-sure" value="not-sure">
+            <label for="not-sure">Não tenho certeza</label><br>
+            
+            <input type="radio" name="radio-btn" id="no" value="no">
+            <label for="no">Não</label><br>
+        </div>
+
+        <div>
+            <p>O que poderia melhorar no produto?</p>
+            <label><input type="checkbox" name="improve-check" id="improve-check" value="design">Design do produto</label><br>
+            <label><input type="checkbox" name="improve-check" id="improve-check" value="quality">Qualidade</label><br>
+            <label><input type="checkbox" name="improve-check" id="improve-check" value="prize">Preço</label><br>
+            <label><input type="checkbox" name="improve-check" id="improve-check" value="suport">Suporte</label><br>
+            <label><input type="checkbox" name="improve-check" id="improve-check" value="acessibility">Acessiblidade</label><br>
+            
+        </div>
+
+        <div>
+            <p>Comentários ou sugestões?</p>
+            <textarea name="Comments" id="Comments" cols="30" rows="10" placeholder="Deixe aqui seus comentários"></textarea>
+        </div>
+
+        <div>
+            <button type="submit" id="submit">Enviar Formulário</button>
+        </div>
+    </form>
 </body>
 </html>
